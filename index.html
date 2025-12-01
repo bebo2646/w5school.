@@ -98,3 +98,133 @@
                         <label>Username</label>
                         <div class="input-wrapper">
                             <i class="bx bxs-user"></i>
+                            <input id="loginUsername" type="text" placeholder="Enter your username" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <div class="input-wrapper">
+                            <i class="bx bxs-lock-alt"></i>
+                            <input id="loginPassword" type="password" placeholder="Enter your password" required />
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox">
+                            <input type="checkbox" />
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn large block">Sign In</button>
+                </form>
+
+                <div class="form-divider">
+                    <span>Or continue with</span>
+                </div>
+
+                <div class="social-buttons">
+                    <button class="btn-social"><i class="bx bxl-google"></i></button>
+                    <button class="btn-social"><i class="bx bxl-github"></i></button>
+                    <button class="btn-social"><i class="bx bxl-linkedin"></i></button>
+                </div>
+
+                <div class="form-footer">
+                    Don't have an account?
+                    <a href="#" class="toggle-form-link" data-form="register">Create one</a>
+                </div>
+            </div>
+
+            <!-- REGISTER SECTION -->
+            <div class="form-section register-section">
+                <div class="form-header">
+                    <h2>Join Learning Hub</h2>
+                    <p>Start your learning journey today</p>
+                </div>
+
+                <form id="registerForm" class="form" action="./pages/profile.html">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <div class="input-wrapper">
+                            <i class="bx bxs-user"></i>
+                            <input id="regUsername" type="text" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <div class="input-wrapper">
+                            <i class="bx bxs-envelope"></i>
+                            <input id="regEmail" type="email" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <div class="input-wrapper">
+                            <i class="bx bxs-lock-alt"></i>
+                            <input id="regPassword" type="password" minlength="6" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox">
+                            <input type="checkbox" required />
+                            <span>I agree to Terms & Conditions</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn large block">Create Account</button>
+                </form>
+
+                <div class="form-divider">
+                    <span>Or continue with</span>
+                </div>
+
+                <div class="social-buttons">
+                    <button class="btn-social"><i class="bx bxl-google"></i></button>
+                    <button class="btn-social"><i class="bx bxl-github"></i></button>
+                    <button class="btn-social"><i class="bx bxl-linkedin"></i></button>
+                </div>
+
+                <div class="form-footer">
+                    Already have an account?
+                    <a href="#" class="toggle-form-link" data-form="login">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- THEME SWITCHER -->
+    <div class="theme-switcher">
+        <select id="themeSelect">
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+            <option value="beige">Beige</option>
+        </select>
+    </div>
+
+    <!-- MODALS (optional - kept from original if present in your project) -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-box">
+            <div class="modal-icon success"><i class="bx bxs-check-circle"></i></div>
+            <h3>Success!</h3>
+            <p id="successMessage">Operation completed successfully.</p>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="errorModal">
+        <div class="modal-box">
+            <div class="modal-icon error"><i class="bx bxs-x-circle"></i></div>
+            <h3>Error</h3>
+            <p id="errorMessage">An error occurred. Please try again.</p>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="./scripts/auth.js"></script>
+</body>
+
+</html>
